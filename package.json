@@ -1,0 +1,22 @@
+{
+    "name": "@byndyusoft/redux-middlewares",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Byndyusoft/redux-middlewares.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Byndyusoft/redux-middlewares/issues"
+    },
+    "homepage": "https://github.com/Byndyusoft/redux-middlewares#readme",
+    "devDependencies": {
+        "jest": "^20.0.4"
+    }
+}
