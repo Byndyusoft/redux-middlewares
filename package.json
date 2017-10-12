@@ -1,22 +1,33 @@
 {
-    "name": "@byndyusoft/redux-middlewares",
-    "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "jest"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Byndyusoft/redux-middlewares.git"
-    },
-    "author": "",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Byndyusoft/redux-middlewares/issues"
-    },
-    "homepage": "https://github.com/Byndyusoft/redux-middlewares#readme",
-    "devDependencies": {
-        "jest": "^20.0.4"
-    }
+  "name": "@byndyusoft/redux-middlewares",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "compile": "babel src --out-dir . --copy-files",
+    "clean": "rimraf error-logger index.js test.js",
+    "postpublish": "npm run clean && npm version patch && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Byndyusoft/redux-middlewares.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Byndyusoft/redux-middlewares/issues"
+  },
+  "homepage": "https://github.com/Byndyusoft/redux-middlewares#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.6.1",
+    "jest": "^20.0.4",
+    "rimraf": "^2.6.2"
+  }
 }
